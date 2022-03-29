@@ -1,0 +1,3 @@
+`sobel(src,dest,depth,dx,dy)`
+
+amount of discoloration contained in each pixel in an image. Image with bitdepth 1 will be b/w.
