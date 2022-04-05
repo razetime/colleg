@@ -6,15 +6,9 @@ class Graph:
 	def __init__(self,vertices):
 		self.V= vertices #No. of vertices
 		self.graph = defaultdict(list)
-
 	def addEdge(self,v,w):
-		#Add w to v_s list
 		self.graph[v].append(w)
-		
-		#Add v to w_s list
 		self.graph[w].append(v)
-
-
 	def isCyclicUtil(self,v,visited,parent):
 		visited[v]= True
 		for i in self.graph[v]:
@@ -24,7 +18,6 @@ class Graph:
 			elif parent!=i:
 				return True
 		return False
-
 	def isCyclic(self):
 		visited =[False]*(self.V)
 		for i in range(self.V):
