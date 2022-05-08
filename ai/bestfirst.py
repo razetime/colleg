@@ -2,7 +2,7 @@
 import heapq
 
 def bestfirst(start, end, graph):
-    visited = [False for i in range(len(graph))]
+    visited = [False for i in range(len(graph)+1)]
     print
     pq = [[0,start]]
     heapq.heapify(pq)
